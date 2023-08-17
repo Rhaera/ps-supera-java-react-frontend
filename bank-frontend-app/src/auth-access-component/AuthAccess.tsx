@@ -70,12 +70,12 @@ const AuthAccess = () => {
   }
   return (
     <div>
-      <form onSubmit={handleAuthClick} className="access-form">
-        <input id="account-id" type="text" className="access-input" required={true} onChange={handleIdStateChange} placeholder="ID" ref={userId} />
+      <form onSubmit={handleAuthClick} className="access-form" style={{ display: "flex", alignItems: "center" }}>
+        <input id="account-id" type="text" className="access-input" required={true} onChange={handleIdStateChange} placeholder="ID" ref={userId} style={{ width: "10em", margin: "5px" }} />
         {hasName && (
           <input id="account-name" type="text" className="account-name" required={hasName} ref={userName} placeholder="Nome" />
         )}
-        <button className="access-btn" type="submit">
+        <button className="access-btn" type="submit" style={{ width: "20em", margin: "5px" }}>
           <h3>
             Acesse sua conta
           </h3>
